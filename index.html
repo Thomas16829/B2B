@@ -1,9 +1,10 @@
 <!DOCTYPE html>
+
 <html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>B2B获客站</title>
+<title>重庆非物质文化遗产展示平台</title>
 
 <style>
 *{margin:0;padding:0;box-sizing:border-box;font-family:sans-serif;}
@@ -20,80 +21,214 @@ body{background:#050814;color:#fff;}
 .card{background:rgba(255,255,255,0.05);padding:25px;border-radius:15px;}
 .card h3{color:#00eaff;margin-bottom:10px;}
 .card p{color:#aaa;}
+
+/* 轮播 */
+.slider{position:relative;max-width:900px;margin:50px auto;overflow:hidden;border-radius:15px;}
+.slides{display:flex;transition:0.5s;}
+.slide{min-width:100%;}
+.slide img{width:100%;display:block;}
+.dots{text-align:center;margin-top:10px;}
+.dots span{display:inline-block;width:10px;height:10px;margin:5px;background:#555;border-radius:50%;cursor:pointer;}
+.dots .active{background:#00eaff;}
+
 .form-box{max-width:500px;margin:40px auto;}
 .form-box input,.form-box textarea{width:100%;padding:12px;margin:10px 0;border:none;border-radius:8px;}
 .form-box button{width:100%;padding:12px;background:#00eaff;border:none;border-radius:8px;font-weight:bold;cursor:pointer;}
 .cta{padding:80px 20px;background:linear-gradient(90deg,#001f3f,#000814);}
 .footer{text-align:center;padding:20px;color:#666;}
+
 @media(max-width:900px){
   .grid{grid-template-columns:1fr;}
   .hero h2{font-size:28px;}
   .nav{flex-direction:column;text-align:center;}
 }
 </style>
+
 </head>
 
 <body>
 
 <div class="nav">
-  <h1>TechB2B</h1>
+  <h1>重庆非遗文化展示平台</h1>
   <div>
-    <a href="#features">优势</a>
-    <a href="#solution">方案</a>
-    <a href="#contact">联系</a>
+    <a href="#history">非遗历史</a>
+    <a href="#studio">工作室简介</a>
+    <a href="#contact">联系我们</a>
   </div>
 </div>
+<!-- 视频介绍区 -->
+
+<div class="section" id="video">
+  <h2>非遗视频介绍</h2>
+  <p style="color:#aaa;margin-top:10px;">通过影像感受传统技艺的魅力与传承</p>
+
+  <div class="video-box">
+    <!-- 本地视频（推荐） -->
+    <video controls poster="https://picsum.photos/900/500?random=10">
+      <source src="your-video.mp4" type="video/mp4">
+      您的浏览器不支持视频播放
+    </video>
+
+```
+<!-- 如果你用 YouTube，替换上面 video 为下面 iframe -->
+<!--
+<iframe src="https://www.youtube.com/embed/你的视频ID" 
+frameborder="0" allowfullscreen></iframe>
+-->
+```
+
+  </div>
+</div>
+
+<style>
+/* 视频模块 */
+.video-box{
+  max-width:900px;
+  margin:40px auto;
+  border-radius:15px;
+  overflow:hidden;
+  background:rgba(255,255,255,0.05);
+  padding:10px;
+}
+
+.video-box video,
+.video-box iframe{
+  width:100%;
+  height:500px;
+  border-radius:10px;
+}
+
+@media(max-width:900px){
+  .video-box video,
+  .video-box iframe{
+    height:220px;
+  }
+}
+</style>
 
 <div class="hero">
-  <h2>帮助企业快速获取高质量客户</h2>
-  <p>稳定 · 高效 · 可扩展的B2B解决方案</p>
-  <a href="#contact" class="btn">获取报价</a>
-  <a href="#contact" class="btn">立即咨询</a>
+  <h2>传承千年技艺 · 弘扬巴渝文化</h2>
+  <p>展示重庆非物质文化遗产，连接传统与现代</p>
+  <a href="#history" class="btn">了解非遗</a>
+  <a href="#contact" class="btn">联系合作</a>
 </div>
 
-<div class="section" id="features">
-  <h2>为什么选择我们</h2>
+<div class="section" id="history">
+  <h2>非遗历史</h2>
+
+  <!-- 图片轮播 -->
+
+  <div class="slider">
+    <div class="slides" id="slides">
+      <div class="slide"><img src="https://picsum.photos/900/500?1"></div>
+      <div class="slide"><img src="https://picsum.photos/900/500?2"></div>
+      <div class="slide"><img src="https://picsum.photos/900/500?3"></div>
+    </div>
+  </div>
+  <div class="dots" id="dots"></div>
+
   <div class="grid">
-    <div class="card"><h3>精准获客</h3><p>定位目标客户，提高转化率</p></div>
-    <div class="card"><h3>全球覆盖</h3><p>支持多地区、多渠道获客</p></div>
-    <div class="card"><h3>自动化系统</h3><p>减少人工成本，提高效率</p></div>
+    <div class="card">
+      <h3>历史传承</h3>
+      <p>重庆非遗文化源远流长，承载着巴渝地区深厚的人文底蕴与传统技艺。</p>
+    </div>
+    <div class="card">
+      <h3>传统技艺</h3>
+      <p>涵盖手工艺、民俗文化、传统表演等多个领域，展现独特魅力。</p>
+    </div>
+    <div class="card">
+      <h3>文化价值</h3>
+      <p>非遗不仅是技艺，更是文化记忆与民族精神的重要载体。</p>
+    </div>
   </div>
 </div>
 
-<div class="section" id="solution">
-  <h2>我们的解决方案</h2>
+<div class="section" id="studio">
+  <h2>工作室简介</h2>
   <div class="grid">
-    <div class="card"><h3>企业引流系统</h3><p>自动获取潜在客户</p></div>
-    <div class="card"><h3>数据分析</h3><p>提升营销决策能力</p></div>
-    <div class="card"><h3>定制开发</h3><p>满足不同业务需求</p></div>
+    <div class="card">
+      <h3>我们的使命</h3>
+      <p>致力于非遗文化的保护、传承与创新，让传统技艺焕发新生。</p>
+    </div>
+    <div class="card">
+      <h3>专业团队</h3>
+      <p>由非遗传承人及设计团队组成，融合传统与现代创意。</p>
+    </div>
+    <div class="card">
+      <h3>合作服务</h3>
+      <p>提供文化展示、文创开发、品牌合作等多元服务。</p>
+    </div>
   </div>
 </div>
 
 <div class="cta">
-  <h2>现在开始获取你的客户</h2>
-  <a href="#contact" class="btn">立即获取方案</a>
+  <h2>一起推动非遗文化传承</h2>
+  <a href="#contact" class="btn">立即联系我们</a>
 </div>
 
 <div class="section" id="contact">
-  <h2>获取专属方案</h2>
+  <h2>联系我们</h2>
   <div class="form-box">
-    <input type="text" placeholder="公司名称">
-    <input type="text" placeholder="联系人">
-    <input type="email" placeholder="郵箱">
-    <textarea rows="4" placeholder="您的需求"></textarea>
-    <button onclick="submitForm()">提交获取方案</button>
+    <input type="text" placeholder="您的姓名">
+    <input type="text" placeholder="联系方式">
+    <input type="email" placeholder="邮箱">
+    <textarea rows="4" placeholder="咨询内容"></textarea>
+    <button onclick="submitForm()">提交信息</button>
   </div>
   <p>Email: info@thomas.bbroot.com</p>
-  <p>WhatsApp: https://wa.me/message/XNDEMW4MZDNZG1</p>
+ <p>
+  WhatsApp: 
+  <a href="https://wa.me/message/XNDEMW4MZDNZG1" target="_blank" style="color:#00eaff;text-decoration:none;">
+    点击联系
+  </a>
+</p>
+
 </div>
 
-<div class="footer">© 2026 TechB2B</div>
+<div class="footer">© 2026 重庆非遗文化工作室</div>
 
 <script>
+// 轮播逻辑
+let index = 0;
+const slides = document.getElementById("slides");
+const total = slides.children.length;
+const dotsContainer = document.getElementById("dots");
+
+// 创建小圆点
+for(let i=0;i<total;i++){
+  let dot = document.createElement("span");
+  dot.onclick = ()=>goTo(i);
+  dotsContainer.appendChild(dot);
+}
+
+function updateDots(){
+  const dots = dotsContainer.children;
+  for(let i=0;i<dots.length;i++){
+    dots[i].classList.remove("active");
+  }
+  dots[index].classList.add("active");
+}
+
+function goTo(i){
+  index = i;
+  slides.style.transform = `translateX(-${i*100}%)`;
+  updateDots();
+}
+
+function autoSlide(){
+  index = (index + 1) % total;
+  goTo(index);
+}
+
+setInterval(autoSlide,3000);
+updateDots();
+
+// 表单
 function submitForm(){
-  alert("提交成功，我们会尽快联系您！");
+  alert("提交成功，我们会尽快与您联系！");
 }
 </script>
 
 </body>
 </html>
+
