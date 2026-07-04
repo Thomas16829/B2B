@@ -49,30 +49,42 @@ body{background:#050814;color:#fff;}
 <body>
 
 <div class="nav">
-  <h1>重庆非遗文化展示平台</h1>
+  <h1>Chongqing Intangible Cultural Heritage Exhibition Platform</h1>
   <div>
-    <a href="#history">非遗历史</a>
-    <a href="#studio">工作室简介</a>
-    <a href="#contact">联系我们</a>
+    <a href="#history">History of Intangible Cultural Heritage</a>
+    <a href="#studio">Studio Profile</a>
+    <a href="#contact">Contact Us</a>
   </div>
 </div>
 <!-- 视频介绍区 -->
 
 <div class="section" id="video">
-  <h2>非遗视频介绍</h2>
-  <p style="color:#aaa;margin-top:10px;">通过影像感受传统技艺的魅力与传承</p>
+  <h2>Video Introduction to Intangible Cultural Heritage</h2>
+  
+  <p style="color:#aaa;margin-top:10px;">
+    Experience the charm and heritage of traditional craftsmanship through film.
+  </p >
 
-  <div class="video-box">
-    <!-- 本地视频（推荐） -->
-    <video controls poster="https://picsum.photos/900/500?random=10">
-      <source src="your-video.mp4" type="video/mp4">
-      您的浏览器不支持视频播放
-    </video>
+  <div class="video-box" style="position:relative;max-width:100%;cursor:pointer;"
+       onclick="this.innerHTML='<iframe width=100% height=400 src=https://www.youtube.com/embed/pbXj1GNiYWc?autoplay=1 frameborder=0 allow=autoplay; encrypted-media allowfullscreen></iframe>'">
+
+    <!-- YouTube 封面 -->
+    <img src="https://hk.thefuturerocks.com/cdn/shop/files/orange2.png?v=1779151282&width=1296"
+     style="width:100%;height:400px;object-fit:cover;border-radius:10px;">
+
+    <!-- 播放按鈕 -->
+    <div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);
+                font-size:60px;color:white;text-shadow:0 0 10px rgba(0,0,0,0.6);">
+      ▶
+    </div>
+
+  </div>
+</div>
 
 ```
 <!-- 如果你用 YouTube，替换上面 video 为下面 iframe -->
 <!--
-<iframe src="https://www.youtube.com/embed/你的视频ID" 
+<iframe src="https://youtube.com/shorts/pbXj1GNiYWc?si=JhG8-_Ha1PgCg8_k" 
 frameborder="0" allowfullscreen></iframe>
 -->
 ```
@@ -107,85 +119,87 @@ frameborder="0" allowfullscreen></iframe>
 </style>
 
 <div class="hero">
-  <h2>传承千年技艺 · 弘扬巴渝文化</h2>
-  <p>展示重庆非物质文化遗产，连接传统与现代</p>
-  <a href="#history" class="btn">了解非遗</a>
-  <a href="#contact" class="btn">联系合作</a>
+  <h2>Preserving Millennial Craftsmanship · Promoting Bayu Culture</h2>
+  <p>Showcasing Chongqing's intangible cultural heritage, connecting tradition and modernity.</p>
+  <a href="#history" class="btn">Learn about Intangible Cultural Heritage</a>
+  <a href="#contact" class="btn">Contact for Partnership</a>
 </div>
 
 <div class="section" id="history">
-  <h2>非遗历史</h2>
+  <h2>Inheritance of Intangible Cultural Heritage</h2>
 
   <!-- 图片轮播 -->
 
   <div class="slider">
     <div class="slides" id="slides">
-      <div class="slide"><img src="https://picsum.photos/900/500?1"></div>
-      <div class="slide"><img src="https://picsum.photos/900/500?2"></div>
-      <div class="slide"><img src="https://picsum.photos/900/500?3"></div>
+      <div class="slide"><img src="https://scontent-hkg4-1.xx.fbcdn.net/v/t39.30808-6/704731436_122104880961305463_648645491726597454_n.jpg?stp=dst-jpg_tt6&cstp=mx1440x1920&ctp=s1440x1920&_nc_cat=106&ccb=1-7&_nc_sid=127cfc&_nc_ohc=5HnWhH0nWnMQ7kNvwEYmB0h&_nc_oc=AdqY1SUEwqGBT8fzzlNckMzt93jxE5WTRh5vfK0kcN-K18R465Ih2SxWYjXlIKO-qdw&_nc_zt=23&_nc_ht=scontent-hkg4-1.xx&_nc_gid=OBGkI9ftLYLrq27NZWIaWg&_nc_ss=792a8&oh=00_AQDu4k1Zs1DDC5zkKEIJyX4PpVfAMeJbMxiN-OvC8LJiNA&oe=6A4E16EA"></div>
+      <div class="slide"><img src="https://scontent-hkg4-1.xx.fbcdn.net/v/t39.30808-6/704714642_122104880925305463_7903410696828577654_n.jpg?stp=dst-jpg_tt6&cstp=mx1438x1694&ctp=s1438x1694&_nc_cat=108&ccb=1-7&_nc_sid=127cfc&_nc_ohc=I9kmuZyltMwQ7kNvwEcfvDH&_nc_oc=AdoZN7l5R0rqMi08TnwZiCvoIRpXBaeEa_9jw2yOgjoEN3rMNmeY2FJE1W6ABtjGckQ&_nc_zt=23&_nc_ht=scontent-hkg4-1.xx&_nc_gid=8nFP90bv8kUi1Qbep8-rTg&_nc_ss=792a8&oh=00_AQCcbaRVgyo9sJvcpuIXa3wz2osMDDbHGM4WWEg0mIl7bg&oe=6A4E3A38"></div>
+      <div class="slide"><img src="https://scontent-hkg1-1.xx.fbcdn.net/v/t39.30808-6/702830501_122104183437305463_542419550942342241_n.jpg?stp=cp6_dst-jpg_tt6&cstp=mx1536x2048&ctp=s1536x2048&_nc_cat=101&ccb=1-7&_nc_sid=127cfc&_nc_ohc=1ftL84PR3X4Q7kNvwGCtTe2&_nc_oc=AdrrkOLSyVqWF3QQLYWafVW89fkF_APuiuVNeP1P0TlodtD2H6E6l5YF94Jkhx_ZnoY&_nc_zt=23&_nc_ht=scontent-hkg1-1.xx&_nc_gid=ZlxJQ9h9pukl3jzBHycw-g&_nc_ss=792a8&oh=00_AQAsUjBCAntc0QUZptEoQEDXTZ7BGNokewmnEwdQon805A&oe=6A4E21A0"></div>
+      <div class="slide"><img src="https://scontent-hkg1-1.xx.fbcdn.net/v/t39.30808-6/702603054_122104183329305463_3097969587806017762_n.jpg?stp=dst-jpg_tt6&cstp=mx1536x2048&ctp=s1536x2048&_nc_cat=105&ccb=1-7&_nc_sid=127cfc&_nc_ohc=uZLR5ZTg7S8Q7kNvwF95VF6&_nc_oc=AdpdAtIL_yyZr-43SmkB96wgLrsbxTh092yKI9csDHU9bVWg20zrAZLoPeVQNiprTLQ&_nc_zt=23&_nc_ht=scontent-hkg1-1.xx&_nc_gid=pWLqT7pO8tPDWcKjb3lAUw&_nc_ss=792a8&oh=00_AQCds0Mf-IhZdMwQTALYpVwztZ3OMwvZktj85XOq1B7ocQ&oe=6A4E13E6"></div>
+      <div class="slide"><img src="https://scontent-hkg4-2.xx.fbcdn.net/v/t39.30808-6/701230175_122104183191305463_6973159538611204577_n.jpg?stp=dst-jpg_tt6&cstp=mx1440x1920&ctp=s1440x1920&_nc_cat=111&ccb=1-7&_nc_sid=127cfc&_nc_ohc=HpTmQz2jsfAQ7kNvwFyG0nK&_nc_oc=AdoQljBuJxu5gbJJW6UEzluzzaXDcT-kCIA5VCRsQu8ZyEYqboyWgkBaG13e5U5ADyM&_nc_zt=23&_nc_ht=scontent-hkg4-2.xx&_nc_gid=BC8j6p-YMbI__jAeTfcdJQ&_nc_ss=792a8&oh=00_AQBtOkA3HKfDycujqDd3ror7dvUP83XMPRwfR5lLu4Bykg&oe=6A4E1329"></div>
     </div>
   </div>
   <div class="dots" id="dots"></div>
 
   <div class="grid">
     <div class="card">
-      <h3>历史传承</h3>
-      <p>重庆非遗文化源远流长，承载着巴渝地区深厚的人文底蕴与传统技艺。</p>
+      <h3>Historical Legacy</h3>
+      <p>Chongqing's intangible cultural heritage boasts a long history, embodying the profound cultural heritage and traditional craftsmanship of the Bayu region.</p>
     </div>
     <div class="card">
-      <h3>传统技艺</h3>
-      <p>涵盖手工艺、民俗文化、传统表演等多个领域，展现独特魅力。</p>
+      <h3>Traditional craftsmanship</h3>
+      <p>Spanning diverse fields such as handicrafts, folk culture, and traditional performances, it showcases a unique charm.</p>
     </div>
     <div class="card">
-      <h3>文化价值</h3>
-      <p>非遗不仅是技艺，更是文化记忆与民族精神的重要载体。</p>
+      <h3>Cultural value</h3>
+      <p>Intangible cultural heritage is not merely a matter of craftsmanship; it is a vital carrier of cultural memory and the national spirit.</p>
     </div>
   </div>
 </div>
 
 <div class="section" id="studio">
-  <h2>工作室简介</h2>
+  <h2>Studio Profile</h2>
   <div class="grid">
     <div class="card">
-      <h3>我们的使命</h3>
-      <p>致力于非遗文化的保护、传承与创新，让传统技艺焕发新生。</p>
+      <h3>Our Mission</h3>
+      <p>Dedicated to the preservation, transmission, and innovation of intangible cultural heritage, breathing new life into traditional craftsmanship.</p>
     </div>
     <div class="card">
-      <h3>专业团队</h3>
-      <p>由非遗传承人及设计团队组成，融合传统与现代创意。</p>
+      <h3>Professional Team</h3>
+      <p>Comprising inheritors of intangible cultural heritage and a design team, it blends tradition with modern creativity.</p>
     </div>
     <div class="card">
-      <h3>合作服务</h3>
-      <p>提供文化展示、文创开发、品牌合作等多元服务。</p>
+      <h3>Cooperative Services</h3>
+      <p>Provides diverse services such as cultural showcases, the development of cultural and creative products, and brand collaborations.</p>
     </div>
   </div>
 </div>
 
 <div class="cta">
-  <h2>一起推动非遗文化传承</h2>
-  <a href="#contact" class="btn">立即联系我们</a>
+  <h2>Work together to promote the inheritance of intangible cultural heritage.</h2>
+  <a href="#contact" class="btn">Contact us immediately</a>
 </div>
 
 <div class="section" id="contact">
-  <h2>联系我们</h2>
+  <h2>Contact Us</h2>
   <div class="form-box">
-    <input type="text" placeholder="您的姓名">
-    <input type="text" placeholder="联系方式">
-    <input type="email" placeholder="邮箱">
-    <textarea rows="4" placeholder="咨询内容"></textarea>
-    <button onclick="submitForm()">提交信息</button>
+    <input type="text" placeholder="Your Name">
+    <input type="text" placeholder="Contact Information">
+    <input type="email" placeholder="Mail">
+    <textarea rows="4" placeholder="Inquiry Details"></textarea>
+    <button onclick="submitForm()">Submit Information</button>
   </div>
   <p>Email: info@thomas.bbroot.com</p>
  <p>
   WhatsApp: 
   <a href="https://wa.me/message/XNDEMW4MZDNZG1" target="_blank" style="color:#00eaff;text-decoration:none;">
-    点击联系
+    Click to contact
   </a>
 </p>
 
 </div>
 
-<div class="footer">© 2026 重庆非遗文化工作室</div>
+<div class="footer">© 2026 Chongqing Intangible Cultural Heritage Studio</div>
 
 <script>
 // 轮播逻辑
