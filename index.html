@@ -4,7 +4,17 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>重庆非物质文化遗产展示平台</title>
+<title><title>Chongqing Intangible Cultural Heritage | Traditional Crafts & Cultural Studio</title>
+
+<meta name="description" content="Explore Chongqing intangible cultural heritage, traditional crafts, Bayu culture, handmade artworks and cultural creative products. Connecting Chinese heritage with global partners.">
+
+<meta name="keywords" content="Chongqing intangible cultural heritage, Chinese traditional crafts, Bayu culture, handmade crafts, cultural heritage studio, China cultural products">
+
+<meta name="author" content="Chongqing Intangible Cultural Heritage Studio">
+
+<meta name="robots" content="index, follow">
+
+<link rel="canonical" href="www.donald.bbroot.com"></title>
 
 <style>
 *{margin:0;padding:0;box-sizing:border-box;font-family:sans-serif;}
@@ -43,54 +53,91 @@ body{background:#050814;color:#fff;}
   .nav{flex-direction:column;text-align:center;}
 }
 </style>
+#language{
+    margin-left:20px;
+    padding:6px 12px;
+    border-radius:20px;
+    background:#001f3f;
+    color:#fff;
+    border:1px solid #00eaff;
+    cursor:pointer;
+}
+<script type="application/ld+json">
+{
+ "@context":"https://schema.org",
+ "@type":"Organization",
+ "name":"Chongqing Intangible Cultural Heritage Studio",
+ "url":"www.donald.bbroot.com/",
+ "logo":"www.donald.bbroot.com/logo.png",
+ "description":"A studio dedicated to preserving Chongqing intangible cultural heritage and traditional craftsmanship.",
+ "sameAs":[
+   "https://wa.me/message/XNDEMW4MZDNZG1"
+ ]
+}
+</script>
 
 </head>
+<meta property="og:title" content="Chongqing Intangible Cultural Heritage Studio">
+
+<meta property="og:description" content="Discover traditional craftsmanship, Bayu culture and Chinese intangible cultural heritage.">
+
+<meta property="og:type" content="website">
+
+<meta property="og:url" content="www.donald.bbroot.com">
+
+<meta property="og:image" content="www.donald.bbroot.com/cover.jpg">
 
 <body>
 
 <div class="nav">
-  <h1>Chongqing Intangible Cultural Heritage Exhibition Platform</h1>
+  <h1>Chongqing Intangible Cultural Heritage Studio</h1>
   <div>
-    <a href="#history">History of Intangible Cultural Heritage</a>
-    <a href="#studio">Studio Profile</a>
-    <a href="#contact">Contact Us</a>
-  </div>
+  <a href=" " data-i18n="navHistory">History of Intangible Heritage</a >
+  <a href="#studio" data-i18n="navStudio">Studio Profile</a >
+  <a href="#contact" data-i18n="navContact">Contact Us</a >
+
+  <select id="language" onchange="changeLanguage(this.value)">
+    <option value="en">English</option>
+    <option value="zh">中文</option>
+    <option value="ar">العربية</option>
+  </select>
 </div>
 <!-- 视频介绍区 -->
 
 <div class="section" id="video">
   <h2>Video Introduction to Intangible Cultural Heritage</h2>
-  
+
   <p style="color:#aaa;margin-top:10px;">
     Experience the charm and heritage of traditional craftsmanship through film.
   </p >
 
-  <div class="video-box" style="position:relative;max-width:100%;cursor:pointer;"
-       onclick="this.innerHTML='<iframe width=100% height=400 src=https://www.youtube.com/embed/pbXj1GNiYWc?autoplay=1 frameborder=0 allow=autoplay; encrypted-media allowfullscreen></iframe>'">
+  <div class="video-box"
+       style="position:relative;max-width:900px;margin:40px auto;cursor:pointer;"
+       onclick="playVideo(this)">
 
-    <!-- YouTube 封面 -->
-    <img src="https://hk.thefuturerocks.com/cdn/shop/files/orange2.png?v=1779151282&width=1296"
-     style="width:100%;height:400px;object-fit:cover;border-radius:10px;">
+    <img
+      src="https://hk.thefuturerocks.com/cdn/shop/files/orange2.png?v=1779151282&width=1296"
+      alt="Video Cover"
+      style="width:100%;height:400px;object-fit:cover;border-radius:10px;">
 
-    <!-- 播放按鈕 -->
     <div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);
-                font-size:60px;color:white;text-shadow:0 0 10px rgba(0,0,0,0.6);">
+                font-size:60px;color:#fff;text-shadow:0 0 10px rgba(0,0,0,.6);">
       ▶
     </div>
 
   </div>
 </div>
 
-```
-<!-- 如果你用 YouTube，替换上面 video 为下面 iframe -->
-<!--
-<iframe src="https://youtube.com/shorts/pbXj1GNiYWc?si=JhG8-_Ha1PgCg8_k" 
-frameborder="0" allowfullscreen></iframe>
--->
-```
-
-  </div>
-</div>
+<script>
+function playVideo(box){
+  box.innerHTML =
+    '<iframe width="100%" height="400" ' +
+    'src="https://www.youtube.com/embed/pbXj1GNiYWc?autoplay=1" ' +
+    'frameborder="0" ' +
+    'allow="autoplay; encrypted-media" ' +
+    'allowfullscreen></iframe>';
+}
+</script>
 
 <style>
 /* 视频模块 */
@@ -105,9 +152,8 @@ frameborder="0" allowfullscreen></iframe>
 
 .video-box video,
 .video-box iframe{
-  width:100%;
-  height:500px;
-  border-radius:10px;
+  aspect-ratio:16/9;
+  height:auto;
 }
 
 @media(max-width:900px){
@@ -116,10 +162,28 @@ frameborder="0" allowfullscreen></iframe>
     height:220px;
   }
 }
+.studio-gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:20px;
+    margin-top:40px;
+}
+
+.studio-gallery img{
+    width:100%;
+    border-radius:15px;
+    display:block;
+    object-fit:cover;
+    transition:.3s;
+}
+
+.studio-gallery img:hover{
+    transform:scale(1.03);
+}
 </style>
 
 <div class="hero">
-  <h2>Preserving Millennial Craftsmanship · Promoting Bayu Culture</h2>
+  <h2>Preserving Millennial Craftsmanship · Promoting Bayu Culture·</h2>
   <p>Showcasing Chongqing's intangible cultural heritage, connecting tradition and modernity.</p>
   <a href="#history" class="btn">Learn about Intangible Cultural Heritage</a>
   <a href="#contact" class="btn">Contact for Partnership</a>
@@ -131,15 +195,37 @@ frameborder="0" allowfullscreen></iframe>
   <!-- 图片轮播 -->
 
   <div class="slider">
-    <div class="slides" id="slides">
-      <div class="slide"><img src="https://scontent-hkg4-1.xx.fbcdn.net/v/t39.30808-6/704731436_122104880961305463_648645491726597454_n.jpg?stp=dst-jpg_tt6&cstp=mx1440x1920&ctp=s1440x1920&_nc_cat=106&ccb=1-7&_nc_sid=127cfc&_nc_ohc=5HnWhH0nWnMQ7kNvwEYmB0h&_nc_oc=AdqY1SUEwqGBT8fzzlNckMzt93jxE5WTRh5vfK0kcN-K18R465Ih2SxWYjXlIKO-qdw&_nc_zt=23&_nc_ht=scontent-hkg4-1.xx&_nc_gid=OBGkI9ftLYLrq27NZWIaWg&_nc_ss=792a8&oh=00_AQDu4k1Zs1DDC5zkKEIJyX4PpVfAMeJbMxiN-OvC8LJiNA&oe=6A4E16EA"></div>
-      <div class="slide"><img src="https://scontent-hkg4-1.xx.fbcdn.net/v/t39.30808-6/704714642_122104880925305463_7903410696828577654_n.jpg?stp=dst-jpg_tt6&cstp=mx1438x1694&ctp=s1438x1694&_nc_cat=108&ccb=1-7&_nc_sid=127cfc&_nc_ohc=I9kmuZyltMwQ7kNvwEcfvDH&_nc_oc=AdoZN7l5R0rqMi08TnwZiCvoIRpXBaeEa_9jw2yOgjoEN3rMNmeY2FJE1W6ABtjGckQ&_nc_zt=23&_nc_ht=scontent-hkg4-1.xx&_nc_gid=8nFP90bv8kUi1Qbep8-rTg&_nc_ss=792a8&oh=00_AQCcbaRVgyo9sJvcpuIXa3wz2osMDDbHGM4WWEg0mIl7bg&oe=6A4E3A38"></div>
-      <div class="slide"><img src="https://scontent-hkg1-1.xx.fbcdn.net/v/t39.30808-6/702830501_122104183437305463_542419550942342241_n.jpg?stp=cp6_dst-jpg_tt6&cstp=mx1536x2048&ctp=s1536x2048&_nc_cat=101&ccb=1-7&_nc_sid=127cfc&_nc_ohc=1ftL84PR3X4Q7kNvwGCtTe2&_nc_oc=AdrrkOLSyVqWF3QQLYWafVW89fkF_APuiuVNeP1P0TlodtD2H6E6l5YF94Jkhx_ZnoY&_nc_zt=23&_nc_ht=scontent-hkg1-1.xx&_nc_gid=ZlxJQ9h9pukl3jzBHycw-g&_nc_ss=792a8&oh=00_AQAsUjBCAntc0QUZptEoQEDXTZ7BGNokewmnEwdQon805A&oe=6A4E21A0"></div>
-      <div class="slide"><img src="https://scontent-hkg1-1.xx.fbcdn.net/v/t39.30808-6/702603054_122104183329305463_3097969587806017762_n.jpg?stp=dst-jpg_tt6&cstp=mx1536x2048&ctp=s1536x2048&_nc_cat=105&ccb=1-7&_nc_sid=127cfc&_nc_ohc=uZLR5ZTg7S8Q7kNvwF95VF6&_nc_oc=AdpdAtIL_yyZr-43SmkB96wgLrsbxTh092yKI9csDHU9bVWg20zrAZLoPeVQNiprTLQ&_nc_zt=23&_nc_ht=scontent-hkg1-1.xx&_nc_gid=pWLqT7pO8tPDWcKjb3lAUw&_nc_ss=792a8&oh=00_AQCds0Mf-IhZdMwQTALYpVwztZ3OMwvZktj85XOq1B7ocQ&oe=6A4E13E6"></div>
-      <div class="slide"><img src="https://scontent-hkg4-2.xx.fbcdn.net/v/t39.30808-6/701230175_122104183191305463_6973159538611204577_n.jpg?stp=dst-jpg_tt6&cstp=mx1440x1920&ctp=s1440x1920&_nc_cat=111&ccb=1-7&_nc_sid=127cfc&_nc_ohc=HpTmQz2jsfAQ7kNvwFyG0nK&_nc_oc=AdoQljBuJxu5gbJJW6UEzluzzaXDcT-kCIA5VCRsQu8ZyEYqboyWgkBaG13e5U5ADyM&_nc_zt=23&_nc_ht=scontent-hkg4-2.xx&_nc_gid=BC8j6p-YMbI__jAeTfcdJQ&_nc_ss=792a8&oh=00_AQBtOkA3HKfDycujqDd3ror7dvUP83XMPRwfR5lLu4Bykg&oe=6A4E1329"></div>
+  <div class="slides" id="slides">
+
+    <div class="slide">
+      <img src="https://scontent-hkg4-1.xx.fbcdn.net/v/t39.30808-6/704731436_122104880961305463_648645491726597454_n.jpg?stp=dst-jpg_tt6&cstp=mx1440x1920&ctp=s1440x1920&_nc_cat=106&ccb=1-7&_nc_sid=127cfc&_nc_ohc=5HnWhH0nWnMQ7kNvwEYmB0h&_nc_oc=AdqY1SUEwqGBT8fzzlNckMzt93jxE5WTRh5vfK0kcN-K18R465Ih2SxWYjXlIKO-qdw&_nc_zt=23&_nc_ht=scontent-hkg4-1.xx&_nc_gid=OBGkI9ftLYLrq27NZWIaWg&_nc_ss=792a8&oh=00_AQDu4k1Zs1DDC5zkKEIJyX4PpVfAMeJbMxiN-OvC8LJiNA&oe=6A4E16EA" alt="Chongqing traditional craftsmanship intangible cultural heritage">
+      title="Traditional Chinese handmade crafts">
     </div>
+
+    <div class="slide">
+      <img src="https://scontent-hkg4-1.xx.fbcdn.net/v/t39.30808-6/704714642_122104880925305463_7903410696828577654_n.jpg?stp=dst-jpg_tt6&cstp=mx1438x1694&ctp=s1438x1694&_nc_cat=108&ccb=1-7&_nc_sid=127cfc&_nc_ohc=I9kmuZyltMwQ7kNvwEcfvDH&_nc_oc=AdoZN7l5R0rqMi08TnwZiCvoIRpXBaeEa_9jw2yOgjoEN3rMNmeY2FJE1W6ABtjGckQ&_nc_zt=23&_nc_ht=scontent-hkg4-1.xx&_nc_gid=8nFP90bv8kUi1Qbep8-rTg&_nc_ss=792a8&oh=00_AQCcbaRVgyo9sJvcpuIXa3wz2osMDDbHGM4WWEg0mIl7bg&oe=6A4E3A38"Chongqing traditional craftsmanship intangible cultural heritage">
+      title="Traditional Chinese handmade crafts">
+    </div>
+  
+    <div class="slide">
+      <img src="https://scontent-hkg1-1.xx.fbcdn.net/v/t39.30808-6/702830501_122104183437305463_542419550942342241_n.jpg?stp=cp6_dst-jpg_tt6&cstp=mx1536x2048&ctp=s1536x2048&_nc_cat=101&ccb=1-7&_nc_sid=127cfc&_nc_ohc=1ftL84PR3X4Q7kNvwGCtTe2&_nc_oc=AdrrkOLSyVqWF3QQLYWafVW89fkF_APuiuVNeP1P0TlodtD2H6E6l5YF94Jkhx_ZnoY&_nc_zt=23&_nc_ht=scontent-hkg1-1.xx&_nc_gid=ZlxJQ9h9pukl3jzBHycw-g&_nc_ss=792a8&oh=00_AQAsUjBCAntc0QUZptEoQEDXTZ7BGNokewmnEwdQon805A&oe=6A4E21A0" alt="Chongqing traditional craftsmanship intangible cultural heritage">
+      title="Traditional Chinese handmade crafts">
+    </div>
+
+    <div class="slide">
+      <img src="https://scontent-hkg1-1.xx.fbcdn.net/v/t39.30808-6/702603054_122104183329305463_3097969587806017762_n.jpg?stp=dst-jpg_tt6&cstp=mx1536x2048&ctp=s1536x2048&_nc_cat=105&ccb=1-7&_nc_sid=127cfc&_nc_ohc=uZLR5ZTg7S8Q7kNvwF95VF6&_nc_oc=AdpdAtIL_yyZr-43SmkB96wgLrsbxTh092yKI9csDHU9bVWg20zrAZLoPeVQNiprTLQ&_nc_zt=23&_nc_ht=scontent-hkg1-1.xx&_nc_gid=pWLqT7pO8tPDWcKjb3lAUw&_nc_ss=792a8&oh=00_AQCds0Mf-IhZdMwQTALYpVwztZ3OMwvZktj85XOq1B7ocQ&oe=6A4E13E6" alt="Chongqing traditional craftsmanship intangible cultural heritage">
+      title="Traditional Chinese handmade crafts">
+    </div>
+
+    <div class="slide">
+      <img src="https://scontent-hkg4-2.xx.fbcdn.net/v/t39.30808-6/701230175_122104183191305463_6973159538611204577_n.jpg?stp=dst-jpg_tt6&cstp=mx1440x1920&ctp=s1440x1920&_nc_cat=111&ccb=1-7&_nc_sid=127cfc&_nc_ohc=HpTmQz2jsfAQ7kNvwFyG0nK&_nc_oc=AdoQljBuJxu5gbJJW6UEzluzzaXDcT-kCIA5VCRsQu8ZyEYqboyWgkBaG13e5U5ADyM&_nc_zt=23&_nc_ht=scontent-hkg4-2.xx&_nc_gid=BC8j6p-YMbI__jAeTfcdJQ&_nc_ss=792a8&oh=00_AQBtOkA3HKfDycujqDd3ror7dvUP83XMPRwfR5lLu4Bykg&oe=6A4E1329" alt="Chongqing traditional craftsmanship intangible cultural heritage">
+      title="Traditional Chinese handmade crafts">
+    </div>
+
   </div>
-  <div class="dots" id="dots"></div>
+</div>
+
+<div class="dots" id="dots"></div>
 
   <div class="grid">
     <div class="card">
@@ -175,16 +261,7 @@ frameborder="0" allowfullscreen></iframe>
   </div>
 </div>
 
-<div class="cta" id="studio">
-
-  <h2>Our Studio</h2>
-
-  <p>
-    Explore our traditional craftsmanship studio, 
-    where creativity, heritage and modern design come together.
-  </p >
-
- <div class="cta" id="studio">
+<div class="cta" id="gallery">
 
   <h2>Our Studio</h2>
 
@@ -194,19 +271,11 @@ frameborder="0" allowfullscreen></iframe>
   </p >
 
 
-  <div class="cta" id="studio">
-
-  <h2>Our Studio</h2>
-
   <p>
     Explore our traditional craftsmanship studio, 
     where creativity, heritage and modern design come together.
   </p >
 
-
-  <div class="cta" id="studio">
-
-  <h2>Our Studio</h2>
 
   <p>
     Explore our traditional craftsmanship studio, 
@@ -224,49 +293,33 @@ frameborder="0" allowfullscreen></iframe>
 
   </div>
 
-
-  
-
-
-  
 </div>
 
-<script>
 
-async function submitForm(){
-
-const data = {
-
-name: document.getElementById("name").value,
-
-contact: document.getElementById("contact").value,
-
-email: document.getElementById("email").value,
-
-message: document.getElementById("message").value
-
-};
-
-
-
-</script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+.contact-link{
+color:#00eaff;
+font-size:18px;
+text-decoration:none;
+display:block;
+margin:15px;
+}
 
 <p>
-  <a href=" "
-target="_blank">
+  <div class="section" id="contact">
 
-<i class="fa-solid fa-envelope"></i>
-info@thomas.bbroot.com
+<h2>Contact Us</h2>
 
+<a class="contact-link"
+href="mailto:info@thomas.bbroot.com">
+Email: info@thomas.bbroot.com
 </a >
-</p >
- 
-  <a href="https://wa.me/message/XNDEMW4MZDNZG1 ">
-<i class="fa-brands fa-whatsapp"></i>
+  
+
+<a class="contact-link"
+href="https://wa.me/message/XNDEMW4MZDNZG1">
 WhatsApp
 </a >
-</p>
 
 </div>
 
