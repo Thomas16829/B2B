@@ -52,16 +52,8 @@ body{background:#050814;color:#fff;}
   .hero h2{font-size:28px;}
   .nav{flex-direction:column;text-align:center;}
 }
-</style>
-#language{
-    margin-left:20px;
-    padding:6px 12px;
-    border-radius:20px;
-    background:#001f3f;
-    color:#fff;
-    border:1px solid #00eaff;
-    cursor:pointer;
-}
+
+
 <script type="application/ld+json">
 {
  "@context":"https://schema.org",
@@ -104,39 +96,448 @@ body{background:#050814;color:#fff;}
 </div>
 <!-- 视频介绍区 -->
 
+
 <div class="section" id="video">
-  <h2>Video Introduction to Intangible Cultural Heritage</h2>
 
-  <p style="color:#aaa;margin-top:10px;">
-    Experience the charm and heritage of traditional craftsmanship through film.
-  </p >
+<h2>
+Video Introduction to Intangible Cultural Heritage
+</h2>
 
-  <div class="video-box"
-       style="position:relative;max-width:900px;margin:40px auto;cursor:pointer;"
-       onclick="playVideo(this)">
+<p style="color:#aaa;margin-top:10px;">
+Experience the charm and heritage of traditional craftsmanship through film.
+<!DOCTYPE html>
+<html lang="en">
 
-    <img
-      src="https://hk.thefuturerocks.com/cdn/shop/files/orange2.png?v=1779151282&width=1296"
-      alt="Video Cover"
-      style="width:100%;height:400px;object-fit:cover;border-radius:10px;">
+<head>
 
-    <div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);
-                font-size:60px;color:#fff;text-shadow:0 0 10px rgba(0,0,0,.6);">
-      ▶
-    </div>
+<meta charset="UTF-8">
 
-  </div>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>
+Chongqing Intangible Cultural Heritage | Traditional Crafts & Cultural Studio
+</title>
+
+
+<meta name="description"
+content="Explore Chongqing intangible cultural heritage, traditional crafts, Bayu culture, handmade artworks and cultural creative products.">
+
+
+<meta name="keywords"
+content="Chongqing intangible cultural heritage, Chinese traditional crafts, Bayu culture, handmade crafts">
+
+
+<meta name="robots" content="index, follow">
+
+
+<link rel="canonical"
+href="https://www.donald.bbroot.com/">
+
+
+
+<!-- Open Graph -->
+
+<meta property="og:title"
+content="Chongqing Intangible Cultural Heritage Studio">
+
+
+<meta property="og:description"
+content="Discover traditional craftsmanship, Bayu culture and Chinese intangible cultural heritage.">
+
+
+<meta property="og:type"
+content="website">
+
+
+<meta property="og:url"
+content="https://www.donald.bbroot.com/">
+
+
+<meta property="og:image"
+content="https://www.donald.bbroot.com/cover.jpg">
+
+
+
+<!-- Schema -->
+
+<script type="application/ld+json">
+
+{
+ "@context":"https://schema.org",
+ "@type":"Organization",
+
+ "name":
+ "Chongqing Intangible Cultural Heritage Studio",
+
+ "url":
+ "https://www.donald.bbroot.com/",
+
+ "description":
+ "A studio dedicated to preserving Chongqing intangible cultural heritage and traditional craftsmanship.",
+
+ "sameAs":[
+ "https://wa.me/message/XNDEMW4MZDNZG1"
+ ]
+
+}
+
+</script>
+
+
+
+<style>
+
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+
+body{
+
+background:#050814;
+color:white;
+
+}
+
+
+.nav{
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+padding:20px 8%;
+
+background:rgba(0,0,0,.5);
+
+}
+
+
+.nav h1{
+
+color:#00eaff;
+font-size:22px;
+
+}
+
+
+.nav a{
+
+color:#ccc;
+margin-left:20px;
+text-decoration:none;
+
+}
+
+
+.hero{
+
+text-align:center;
+padding:120px 20px;
+
+}
+
+
+.hero h2{
+
+font-size:42px;
+
+background:
+linear-gradient(90deg,#00eaff,#007bff);
+
+-webkit-background-clip:text;
+color:transparent;
+
+}
+
+
+.hero p{
+
+color:#aaa;
+margin:20px;
+
+}
+
+
+.btn{
+
+display:inline-block;
+
+padding:12px 30px;
+
+margin:10px;
+
+border-radius:30px;
+
+background:#00eaff;
+
+color:#000;
+
+text-decoration:none;
+
+font-weight:bold;
+
+}
+
+
+.section{
+
+padding:70px 8%;
+text-align:center;
+
+}
+
+
+
+/* VIDEO */
+
+
+.video-box{
+
+max-width:900px;
+
+margin:40px auto;
+
+border-radius:15px;
+
+overflow:hidden;
+
+background:#000;
+
+}
+
+
+.video-box iframe{
+
+width:100%;
+
+height:500px;
+
+display:block;
+
+}
+
+
+
+@media(max-width:900px){
+
+.nav{
+
+flex-direction:column;
+
+}
+
+
+.hero h2{
+
+font-size:28px;
+
+}
+
+
+.video-box iframe{
+
+height:240px;
+
+}
+
+
+}
+
+
+</style>
+
+</head>
+
+
+
+<body>
+
+
+
+<!-- NAV -->
+
+<div class="nav">
+
+
+<h1>
+Chongqing Intangible Cultural Heritage Studio
+</h1>
+
+
+<div>
+
+<a href=" ">
+Heritage
+</a >
+
+
+<a href="#studio">
+Studio
+</a >
+
+
+<a href="#contact">
+Contact
+</a >
+
+
 </div>
 
-<script>
-function playVideo(box){
-  box.innerHTML =
-    '<iframe width="100%" height="400" ' +
-    'src="https://www.youtube.com/embed/pbXj1GNiYWc?autoplay=1" ' +
-    'frameborder="0" ' +
-    'allow="autoplay; encrypted-media" ' +
-    'allowfullscreen></iframe>';
+
+</div>
+
+
+
+
+<!-- HERO -->
+
+
+<div class="hero">
+
+
+<h2>
+Preserving Millennial Craftsmanship · Promoting Bayu Culture
+</h2>
+
+
+<p>
+Showcasing Chongqing's intangible cultural heritage, connecting tradition and modernity.
+</p >
+
+
+<a class="btn" href="#history">
+Learn More
+</a >
+
+
+<a class="btn" href="#contact">
+Partnership
+</a >
+
+
+</div>
+
+
+
+
+
+<!-- 视频封面播放区 -->
+
+<div class="section">
+
+<h2>
+Video Introduction to Intangible Cultural Heritage
+</h2>
+
+<p style="color:#aaa;margin:20px">
+Experience the charm and heritage of traditional craftsmanship through film.
+</p >
+
+
+<div class="video-cover" onclick="playVideo(this)">
+
+<img 
+src="https://github.com/Thomas16829/B2B/blob/main/tennis-pink2.webp?raw=true"
+alt="Chongqing Intangible Cultural Heritage Video Cover">
+
+
+<div class="play-button">
+▶
+</div>
+
+
+</div>
+
+</div>
+
+
+<style>
+
+.video-cover{
+
+max-width:900px;
+height:500px;
+margin:40px auto;
+position:relative;
+cursor:pointer;
+overflow:hidden;
+border-radius:15px;
+background:#000;
+
 }
+
+
+.video-cover img{
+
+width:100%;
+height:100%;
+object-fit:cover;
+
+}
+
+
+.play-button{
+
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+
+font-size:70px;
+color:white;
+
+text-shadow:
+0 0 15px #000;
+
+}
+
+
+.video-cover:hover img{
+
+transform:scale(1.05);
+transition:.5s;
+
+}
+
+
+@media(max-width:900px){
+
+.video-cover{
+
+height:240px;
+
+}
+
+}
+
+</style>
+
+
+
+<script>
+
+function playVideo(box){
+
+box.innerHTML=
+
+`
+<iframe
+width="100%"
+height="100%"
+src="https://www.youtube.com/embed/pbXj1GNiYWc?autoplay=1"
+frameborder="0"
+allow="autoplay; encrypted-media"
+allowfullscreen>
+</iframe>
+`;
+
+}
+
 </script>
 
 <style>
@@ -194,102 +595,432 @@ function playVideo(box){
 
   <!-- 图片轮播 -->
 
-  <div class="slider">
-  <div class="slides" id="slides">
+<!-- CULTURAL HERITAGE -->
 
-    <div class="slide">
-      <img src="https://scontent-hkg4-1.xx.fbcdn.net/v/t39.30808-6/704731436_122104880961305463_648645491726597454_n.jpg?stp=dst-jpg_tt6&cstp=mx1440x1920&ctp=s1440x1920&_nc_cat=106&ccb=1-7&_nc_sid=127cfc&_nc_ohc=5HnWhH0nWnMQ7kNvwEYmB0h&_nc_oc=AdqY1SUEwqGBT8fzzlNckMzt93jxE5WTRh5vfK0kcN-K18R465Ih2SxWYjXlIKO-qdw&_nc_zt=23&_nc_ht=scontent-hkg4-1.xx&_nc_gid=OBGkI9ftLYLrq27NZWIaWg&_nc_ss=792a8&oh=00_AQDu4k1Zs1DDC5zkKEIJyX4PpVfAMeJbMxiN-OvC8LJiNA&oe=6A4E16EA" alt="Chongqing traditional craftsmanship intangible cultural heritage">
-      title="Traditional Chinese handmade crafts">
-    </div>
+<div class="section" id="history">
 
-    <div class="slide">
-      <img src="https://scontent-hkg4-1.xx.fbcdn.net/v/t39.30808-6/704714642_122104880925305463_7903410696828577654_n.jpg?stp=dst-jpg_tt6&cstp=mx1438x1694&ctp=s1438x1694&_nc_cat=108&ccb=1-7&_nc_sid=127cfc&_nc_ohc=I9kmuZyltMwQ7kNvwEcfvDH&_nc_oc=AdoZN7l5R0rqMi08TnwZiCvoIRpXBaeEa_9jw2yOgjoEN3rMNmeY2FJE1W6ABtjGckQ&_nc_zt=23&_nc_ht=scontent-hkg4-1.xx&_nc_gid=8nFP90bv8kUi1Qbep8-rTg&_nc_ss=792a8&oh=00_AQCcbaRVgyo9sJvcpuIXa3wz2osMDDbHGM4WWEg0mIl7bg&oe=6A4E3A38"Chongqing traditional craftsmanship intangible cultural heritage">
-      title="Traditional Chinese handmade crafts">
-    </div>
-  
-    <div class="slide">
-      <img src="https://scontent-hkg1-1.xx.fbcdn.net/v/t39.30808-6/702830501_122104183437305463_542419550942342241_n.jpg?stp=cp6_dst-jpg_tt6&cstp=mx1536x2048&ctp=s1536x2048&_nc_cat=101&ccb=1-7&_nc_sid=127cfc&_nc_ohc=1ftL84PR3X4Q7kNvwGCtTe2&_nc_oc=AdrrkOLSyVqWF3QQLYWafVW89fkF_APuiuVNeP1P0TlodtD2H6E6l5YF94Jkhx_ZnoY&_nc_zt=23&_nc_ht=scontent-hkg1-1.xx&_nc_gid=ZlxJQ9h9pukl3jzBHycw-g&_nc_ss=792a8&oh=00_AQAsUjBCAntc0QUZptEoQEDXTZ7BGNokewmnEwdQon805A&oe=6A4E21A0" alt="Chongqing traditional craftsmanship intangible cultural heritage">
-      title="Traditional Chinese handmade crafts">
-    </div>
 
-    <div class="slide">
-      <img src="https://scontent-hkg1-1.xx.fbcdn.net/v/t39.30808-6/702603054_122104183329305463_3097969587806017762_n.jpg?stp=dst-jpg_tt6&cstp=mx1536x2048&ctp=s1536x2048&_nc_cat=105&ccb=1-7&_nc_sid=127cfc&_nc_ohc=uZLR5ZTg7S8Q7kNvwF95VF6&_nc_oc=AdpdAtIL_yyZr-43SmkB96wgLrsbxTh092yKI9csDHU9bVWg20zrAZLoPeVQNiprTLQ&_nc_zt=23&_nc_ht=scontent-hkg1-1.xx&_nc_gid=pWLqT7pO8tPDWcKjb3lAUw&_nc_ss=792a8&oh=00_AQCds0Mf-IhZdMwQTALYpVwztZ3OMwvZktj85XOq1B7ocQ&oe=6A4E13E6" alt="Chongqing traditional craftsmanship intangible cultural heritage">
-      title="Traditional Chinese handmade crafts">
-    </div>
+<h2>
+Inheritance of Intangible Cultural Heritage
+</h2>
 
-    <div class="slide">
-      <img src="https://scontent-hkg4-2.xx.fbcdn.net/v/t39.30808-6/701230175_122104183191305463_6973159538611204577_n.jpg?stp=dst-jpg_tt6&cstp=mx1440x1920&ctp=s1440x1920&_nc_cat=111&ccb=1-7&_nc_sid=127cfc&_nc_ohc=HpTmQz2jsfAQ7kNvwFyG0nK&_nc_oc=AdoQljBuJxu5gbJJW6UEzluzzaXDcT-kCIA5VCRsQu8ZyEYqboyWgkBaG13e5U5ADyM&_nc_zt=23&_nc_ht=scontent-hkg4-2.xx&_nc_gid=BC8j6p-YMbI__jAeTfcdJQ&_nc_ss=792a8&oh=00_AQBtOkA3HKfDycujqDd3ror7dvUP83XMPRwfR5lLu4Bykg&oe=6A4E1329" alt="Chongqing traditional craftsmanship intangible cultural heritage">
-      title="Traditional Chinese handmade crafts">
-    </div>
 
-  </div>
+
+<div class="slider">
+
+
+<div class="slides" id="slides">
+
+
+
+<div class="slide">
+
+<img src="https://raw.githubusercontent.com/Thomas16829/B2B/main/9.jpg"
+alt="Chongqing traditional craftsmanship">
+
 </div>
+
+
+
+
+<div class="slide">
+
+<img src="https://raw.githubusercontent.com/Thomas16829/B2B/main/17.jpg"
+alt="Chinese handmade crafts">
+
+</div>
+
+
+
+
+<div class="slide">
+
+<img src="https://raw.githubusercontent.com/Thomas16829/B2B/main/21.jpg"
+alt="Bayu cultural heritage">
+
+</div>
+
+
+
+
+<div class="slide">
+
+<img src="https://raw.githubusercontent.com/Thomas16829/B2B/main/11.jpg"
+alt="Traditional Chinese crafts">
+
+</div>
+
+
+
+
+<div class="slide">
+
+<img src="https://raw.githubusercontent.com/Thomas16829/B2B/main/14.jpg"
+alt="Cultural heritage artwork">
+
+</div>
+
+
+
+</div>
+
+
+</div>
+
+
 
 <div class="dots" id="dots"></div>
 
-  <div class="grid">
-    <div class="card">
-      <h3>Historical Legacy</h3>
-      <p>Chongqing's intangible cultural heritage boasts a long history, embodying the profound cultural heritage and traditional craftsmanship of the Bayu region.</p>
-    </div>
-    <div class="card">
-      <h3>Traditional craftsmanship</h3>
-      <p>Spanning diverse fields such as handicrafts, folk culture, and traditional performances, it showcases a unique charm.</p>
-    </div>
-    <div class="card">
-      <h3>Cultural value</h3>
-      <p>Intangible cultural heritage is not merely a matter of craftsmanship; it is a vital carrier of cultural memory and the national spirit.</p>
-    </div>
-  </div>
+
+
+
+<div class="grid">
+
+
+<div class="card">
+
+<h3>
+Historical Legacy
+</h3>
+
+<p>
+Chongqing's intangible cultural heritage carries centuries of history and represents the unique culture of the Bayu region.
+</p >
+
 </div>
+
+
+
+
+<div class="card">
+
+<h3>
+Traditional Craftsmanship
+</h3>
+
+<p>
+Traditional skills including handmade crafts, folk art and cultural creation show the beauty of Chinese heritage.
+</p >
+
+</div>
+
+
+
+
+<div class="card">
+
+<h3>
+Cultural Value
+</h3>
+
+<p>
+Intangible cultural heritage preserves memories, skills and cultural identity for future generations.
+</p >
+
+</div>
+
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+<!-- STUDIO PROFILE -->
+
 
 <div class="section" id="studio">
-  <h2>Studio Profile</h2>
-  <div class="grid">
-    <div class="card">
-      <h3>Our Mission</h3>
-      <p>Dedicated to the preservation, transmission, and innovation of intangible cultural heritage, breathing new life into traditional craftsmanship.</p>
-    </div>
-    <div class="card">
-      <h3>Professional Team</h3>
-      <p>Comprising inheritors of intangible cultural heritage and a design team, it blends tradition with modern creativity.</p>
-    </div>
-    <div class="card">
-      <h3>Cooperative Services</h3>
-      <p>Provides diverse services such as cultural showcases, the development of cultural and creative products, and brand collaborations.</p>
-    </div>
-  </div>
+
+
+<h2>
+Studio Profile
+</h2>
+
+
+
+<div class="grid">
+
+
+
+<div class="card">
+
+<h3>
+Our Mission
+</h3>
+
+<p>
+Preserving, inheriting and innovating traditional craftsmanship through modern design.
+</p >
+
 </div>
 
-<div class="cta" id="gallery">
-
-  <h2>Our Studio</h2>
-
-  <p>
-    Explore our traditional craftsmanship studio, 
-    where creativity, heritage and modern design come together.
-  </p >
 
 
-  <p>
-    Explore our traditional craftsmanship studio, 
-    where creativity, heritage and modern design come together.
-  </p >
+
+<div class="card">
+
+<h3>
+Professional Team
+</h3>
+
+<p>
+A creative team combining cultural heritage experts and modern designers.
+</p >
+
+</div>
 
 
-  <p>
-    Explore our traditional craftsmanship studio, 
-    where creativity, heritage and modern design come together.
-  </p >
+
+
+<div class="card">
+
+<h3>
+Cooperation Services
+</h3>
+
+<p>
+Cultural exhibitions, creative products, brand cooperation and global partnerships.
+</p >
+
+</div>
+
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+<!-- STUDIO GALLERY -->
+
+
+<div class="cta">
+
+
+<h2>
+Our Studio
+</h2>
+
+
+<p>
+Explore our traditional craftsmanship studio where heritage and modern creativity meet.
+</p >
+
+
+
+
+</div>
+
+
+
+
+
+<style>
+
+
+.slider{
+
+max-width:900px;
+
+margin:50px auto;
+
+overflow:hidden;
+
+border-radius:15px;
+
+}
+
+
+
+.slides{
+
+display:flex;
+
+transition:.5s;
+
+}
+
+
+
+.slide{
+
+min-width:100%;
+
+}
+
+
+
+.slide img{
+
+width:100%;
+
+height:500px;
+
+object-fit:cover;
+
+}
+
+
+
+.dots{
+
+margin-top:15px;
+
+}
+
+
+
+.dots span{
+
+display:inline-block;
+
+width:12px;
+
+height:12px;
+
+background:#555;
+
+border-radius:50%;
+
+margin:5px;
+
+cursor:pointer;
+
+}
+
+
+
+.dots .active{
+
+background:#00eaff;
+
+}
+
+
+
+.grid{
+
+display:grid;
+
+grid-template-columns:repeat(3,1fr);
+
+gap:20px;
+
+margin-top:40px;
+
+}
+
+
+
+.card{
+
+background:rgba(255,255,255,.05);
+
+padding:25px;
+
+border-radius:15px;
+
+}
+
+
+
+.card h3{
+
+color:#00eaff;
+
+margin-bottom:15px;
+
+}
+
+
+
+.card p{
+
+color:#aaa;
+
+}
+
+
+
+.cta{
+
+padding:80px 8%;
+
+text-align:center;
+
+background:linear-gradient(90deg,#001f3f,#000814);
+
+}
+
+
+
+.studio-gallery{
+
+display:grid;
+
+grid-template-columns:
+repeat(auto-fit,minmax(260px,1fr));
+
+gap:20px;
+
+margin-top:40px;
+
+}
+
+
+
+.studio-gallery img{
+
+width:100%;
+
+border-radius:15px;
+
+}
+
+
+
+@media(max-width:900px){
+
+
+.grid{
+
+grid-template-columns:1fr;
+
+}
+
+
+.slide img{
+
+height:260px;
+
+}
+
+
+}
+
+
+</style>
 
 
   <div class="studio-gallery">
 
     <img src="https://github.com/Thomas16829/B2B/blob/main/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20260708092013_140_18.jpg?raw=true" alt="Studio">
 
-    <img src="https://你的图片地址.com/studio2.jpg" alt="Craft Process">
+    <img src="https://github.com/Thomas16829/B2B/blob/main/3.jpg?raw=true" alt="Craft Process">
 
-    <img src="https://你的图片地址.com/studio3.jpg" alt="Workshop">
+    <img src="https://github.com/Thomas16829/B2B/blob/main/4.jpg?raw=true" alt="Workshop">
+
+     <img src="https://github.com/Thomas16829/B2B/blob/main/2.jpg?raw=true" alt="Workshop">
 
   </div>
 
@@ -297,13 +1028,7 @@ function playVideo(box){
 
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-.contact-link{
-color:#00eaff;
-font-size:18px;
-text-decoration:none;
-display:block;
-margin:15px;
-}
+
 
 <p>
   <div class="section" id="contact">
